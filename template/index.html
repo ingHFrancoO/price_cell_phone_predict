@@ -10,77 +10,77 @@
     <form action="/" method="post">
         <div class="d-flex">
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="2000" required="required" name="battery_power" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="500" max="2000"   name="battery_power" class="form-control form-control-sm" placeholder="500 - 2000" >
                 <label for="battery_power">Batteria (mAh)*</label>
             </div>
         
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="20" required="required" name="fc" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="20"   name="fc" class="form-control form-control-sm" placeholder="0">
                 <label for="fc">Camara frontal (Mpx)*</label>
             </div>
 
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="20" required="required" name="pc" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="20"   name="pc" class="form-control form-control-sm" placeholder="0">
                 <label for="pc">Camara primaria (Mpx)*</label>
             </div>
         
         </div>
         <div class="d-flex">
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="6000" required="required" name="ram" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="6000"   name="ram" class="form-control form-control-sm" placeholder="0">
                 <label for="ram">RAM (MB)*</label>
             </div>
 
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="110" required="required" name="int_memory" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="110"   name="int_memory" class="form-control form-control-sm" placeholder="0">
                 <label for="int_memory">Memoria interna (GB)*</label>
             </div>
         
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="10" required="required" name="n_cores" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="10"   name="n_cores" class="form-control form-control-sm" placeholder="0">
                 <label for="n_cores">Nùmero nucleos de procesador*</label>
             </div>
         </div>        
                 
         <div class="d-flex">
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="4" required="required" name="clock_speed" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="4"   name="clock_speed" class="form-control form-control-sm" placeholder="0">
                 <label for="clock_speed">Velocidad de reloj*</label>
             </div>
             
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="2000" required="required" name="px_height" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="2000"   name="px_height" class="form-control form-control-sm" placeholder="0">
                 <label for="px_height">Resolución de píxeles (Altura)*</label>
             </div>
         
         
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="2000" required="required" name="px_width" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="2000"   name="px_width" class="form-control form-control-sm" placeholder="0">
                 <label for="px_width">Resolución de píxeles (Ancho)*</label>
             </div>
         </div>    
             
         <div class="d-flex">
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="200" required="required" name="mobile_wt" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="200"   name="mobile_wt" class="form-control form-control-sm" placeholder="0">
                 <label for="mobile_wt">Peso del celular*</label>
             </div>
         
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="20" required="required" name="sc_h" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="20"   name="sc_h" class="form-control form-control-sm" placeholder="0">
                 <label for="sc_h">Altura de pantalla (cm)*</label>
             </div>
         
         
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="20" required="required" name="sc_w" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="20"   name="sc_w" class="form-control form-control-sm" placeholder="0">
                 <label for="sc_w">Anchura de pantalla (cm)</label>
             </div>
         </div>
         
         <div class="d-flex">
             <div class="form-floating p-2 flex-fill">
-                <input type="number" min="0" max="24" required="required" name="talk_time" class="form-control form-control-sm" placeholder="0">
+                <input type="number" min="0" max="24"   name="talk_time" class="form-control form-control-sm" placeholder="0">
                 <label for="talk_time">Duracion bateria (h)*</label>
             </div>
         </div>
@@ -116,9 +116,6 @@
             <button class="btn btn-danger btn-sm m-2" type="reset" value="reset">Limpiar formulario</button>
             <button type="submit" class="btn btn-success btn-sm m-2">Consultar rango de precio</button>
         </div>
-        
-    
-       
 
         {% if price|length > 0 %}
             {% if price == "True" %}
