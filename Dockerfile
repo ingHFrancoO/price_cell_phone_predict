@@ -15,10 +15,10 @@ WORKDIR /app
 COPY app.py .
 COPY requirements.txt .
 COPY RF_final_model.joblib .
-COPY bootstrap.min.css ./static/css
-COPY main.css ./static/css
-COPY base.html ./template
-COPY index.html ./template
+COPY static/css/bootstrap.min.css ./static/css
+COPY static/css/main.css ./static/css
+COPY template/base.html ./template
+COPY template/index.html ./template
 
 #Instala los paquetes pip
 RUN pip install -r requirements.txt
